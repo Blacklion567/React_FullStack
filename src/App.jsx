@@ -5,6 +5,9 @@ import Posts from './components/Posts';
 import Profile from './components/Profiles';
 import PostItem from './components/PostItem';
 import Header from './components/Header';
+import Life from './components/Lifecyles';
+import User from './components/User';
+import Conditional from './components/Conditional';
 
 const App = () => {
 
@@ -14,10 +17,15 @@ const App = () => {
         <Header />
         <div className=' px-5 py-3'>
           <Routes>
-            <Route path='/Posts/:id' element={<PostItem />}>PostItem</Route>
+            <Route path='/Posts/:id' element={<PostItem />}></Route>
             <Route path='/Posts' element={<Posts />}></Route>
             <Route path='/Profile' element={<Profile />}></Route>
             <Route path='/' exact element={<Home />}></Route>
+
+            <Route path='/Life' element={<Life />}></Route>
+            <Route path='/User' element={<User />}></Route>
+            <Route path='/Conditional' exact element={<Conditional />}></Route>
+
             <Route render={() => (
               <h3>Page not found</h3>
             )} />

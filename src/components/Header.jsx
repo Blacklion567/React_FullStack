@@ -16,6 +16,9 @@ const Header = () => {
               hash: '#profile',
               search: '?true=enabled',
             }} >Profile</NavLink>
+            <NavLink className='p-2 text-dark text-decoration-none' to='/User'>User</NavLink>-
+            <NavLink className='p-2 text-dark text-decoration-none' to='/Conditional'>Conditional</NavLink>-
+            <NavLink className='p-2 text-dark text-decoration-none' to='/Life'>Life</NavLink>-
           </nav>
         </div>
       </header>
